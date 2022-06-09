@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.playground {
+    height: 100vh;
+    width: 100vw;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.item-wrapper {
+    padding: 8px;
+}
+
+.item {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.item-cover {
+    height: 100%;
+    background-color: bisque;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: 1s;
+}
+
+.item-text {
+    font-size: 48px;
+}
